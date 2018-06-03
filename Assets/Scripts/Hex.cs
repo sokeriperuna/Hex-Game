@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum HexType
+public enum HEX_TYPE
 {
-    REF_TRANSORM,
+    DEFAULT,
+    ENUM_MAX
 }
 
 public struct Hex
 {
     public Transform  refrenceTransform;
     public GameObject hexObject;
-    public HexType    type;
     public int        index_x;
     public int        index_y;
+    public BIOME_TYPE biome;
+    public HEX_TYPE type;
+
+    public bool initialized;
 }

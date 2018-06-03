@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: 14a10d22f525aad48bb3240c3d0e3b79
+guid: dfc44885e01514c49bf434f99f8f892a
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: unnamed
+    2100000: Diffuse__Hex_Texture
     2300000: //RootNode
     3300000: //RootNode
     4300000: Hexagon
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

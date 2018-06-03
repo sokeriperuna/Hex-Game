@@ -6,15 +6,16 @@ public class GameController : MonoBehaviour {
 
     public HexMapParameters mapParameters;
 
-    public GameObject[] hexPrefabs;
-
+    public GameObject hexTransformRefrence;
     public GameObject hexMapParent;
+
+    public BiomeParameters[] biomeParameters;
 
     private HexMap hexMap;
 
     private void Awake()
     {
-        hexMap = new HexMap(mapParameters, hexPrefabs, hexMapParent.transform);
+        hexMap = new HexMap(mapParameters, biomeParameters, hexMapParent.transform, hexTransformRefrence);
     }
 
     private void Start()
@@ -25,5 +26,6 @@ public class GameController : MonoBehaviour {
     private void InitializeGame()
     {
         hexMap.Initialize();
+        hexMap.GenerateNewHexes();
     }
 }
